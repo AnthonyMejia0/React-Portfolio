@@ -1,5 +1,5 @@
 import './navbar.scss'
-import logo from '../../AM_LOGO.png'
+//import logo from '../../../public/assets/AM_LOGO.png';
 import {Person, Phone, MailOutline} from '@material-ui/icons/';
 
 function NavBar({ menuOpen, setMenuOpen }) {
@@ -8,7 +8,7 @@ function NavBar({ menuOpen, setMenuOpen }) {
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro">
-                        <img src={logo} alt="My Personal logo" />
+                        <img src="assets/AM_LOGO.png" alt="My Personal logo" />
                     </a>
                     <div className="itemContainer">
                         <Person className="icon" />
