@@ -8,7 +8,7 @@ function NavBar({ menuOpen, setMenuOpen }) {
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro">
-                        <img src="assets/AM_LOGO.png" alt="My Personal logo" />
+                        <img src="assets/images/AM_LOGO.png" alt="My Personal logo" />
                     </a>
                     <div className="itemContainer">
                         <Person className="icon" />
