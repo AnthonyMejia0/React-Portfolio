@@ -31,9 +31,14 @@
             }
 
             .itemContainer {
-                display: flex;
-                align-items: center;
-                margin-right: 30px;
+                
+                display: none;
+
+                @include for-tablet-landscape-up {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 30px;
+                }
             }
 
             .icon {
