@@ -22,14 +22,17 @@
                 line-height: 5rem;
              }
 
-             @include for-tablet-landscape-up {
+            @include for-phone-landscape {
+                font-size: 2.5rem;
+            }
+
+             @include for-desktop-up {
                  font-size: 7.7rem;
              }
         }
 
         .name {
             color: $mainColor;
-            font-size: 8rem;
             font-weight: bold;
 
             @include for-phone-only {
@@ -37,15 +40,14 @@
              }
 
             @include for-tablet-landscape-up {
-                font-size: 10rem;
+                font-size: 7rem;
             }
 
             @include for-desktop-up {
                 color: $mainColor;
+                font-size: 10rem;
             }
         }
-
-        
     }
 
     .about-me {
@@ -55,12 +57,12 @@
 
         @include for-tablet-portrait-up {
             left: 1.7%;
-            margin-top: 3rem;
+            //margin-top: 3rem;
         }
 
         @include for-tablet-landscape-up {
             left: 2%;
-            margin-top: 2rem;
+            margin-top: 1rem;
         }
 
         @include for-desktop-up {
@@ -78,14 +80,18 @@
                 opacity: 1;
                 font-size: 1.45rem;
                 margin-bottom: 0.8rem;
-                color: rgb(255, 255, 255);
-
+                color: white;
+                
                 @include for-tablet-portrait-up {
                     font-size: 2.2rem;
                 }
 
                 @include for-tablet-landscape-up {
                     font-size: 2.7rem;
+                }
+
+                @include for-phone-landscape {
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -109,6 +115,14 @@
             bottom: 2%;
         }
 
+        @include for-desktop-up {
+            left: 35%;
+        }
+
+        @include for-phone-landscape {
+            left: 60%;
+        }
+
         a {
             text-decoration: none;
             display: flex;
@@ -126,6 +140,10 @@
 
             @include for-tablet-landscape-up {
                 font-size: 2rem;
+            }
+
+            @include for-phone-landscape {
+                font-size: 1rem;
             }
 
             &:hover {
