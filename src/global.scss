@@ -15,3 +15,7 @@ $mainColor: #6F9DE0;
 @mixin for-desktop-up {
     @media (min-width: 1200px) { @content; }
 }
+
+@mixin for-phone-landscape {
+    @media (max-height: 420px) { @content; }
+}
