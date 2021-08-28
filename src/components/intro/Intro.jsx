@@ -15,7 +15,7 @@ function Intro() {
                 </ul>
             </div>
             <div className="skillset">
-                <a href='#portfolio'>
+                <a href='#skillset'>
                     <h3>Click to see my skillset</h3>
                 </a>
             </div>
