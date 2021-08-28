@@ -14,11 +14,16 @@
         h2 {
             font-size: 5rem;
             text-align: left;
-            margin-left: 1rem;
+            margin-left: 0.7rem;
             color: rgb(243, 246, 247);
+            overflow-y: hidden;
 
             @include for-phone-only {
                 line-height: 5rem;
+             }
+
+             @include for-tablet-landscape-up {
+                 font-size: 7.7rem;
              }
         }
 
@@ -30,19 +35,13 @@
             @include for-phone-only {
                 font-size: 4.1rem;
              }
-             
-
-            @include for-tablet-portrait-up {
-                font-size: 7rem;
-                color: red;
-            }
 
             @include for-tablet-landscape-up {
-                color: white;
+                font-size: 10rem;
             }
 
             @include for-desktop-up {
-                color: green;
+                color: $mainColor;
             }
         }
 
@@ -51,11 +50,28 @@
 
     .about-me {
         position: absolute;
-        left: 5%;
+        left: 4%;
         margin-top: 1rem;
+
+        @include for-tablet-portrait-up {
+            left: 1.7%;
+            margin-top: 3rem;
+        }
+
+        @include for-tablet-landscape-up {
+            left: 2%;
+            margin-top: 2rem;
+        }
+
+        @include for-desktop-up {
+            left: 1%;
+        }
 
         ul {
             list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
 
             li {
                 animation: fadeIn 2s;
@@ -63,6 +79,14 @@
                 font-size: 1.45rem;
                 margin-bottom: 0.8rem;
                 color: rgb(255, 255, 255);
+
+                @include for-tablet-portrait-up {
+                    font-size: 2.2rem;
+                }
+
+                @include for-tablet-landscape-up {
+                    font-size: 2.7rem;
+                }
             }
         }
     }
@@ -70,17 +94,43 @@
     .skillset {
         position: absolute;
         bottom: 20%;
-        left: 10%;
+
+        @include for-phone-only {
+            left: 17%;
+        }
+
+        @include for-tablet-portrait-up {
+            left: 25%;
+            bottom: 10%;
+        }
+
+        @include for-tablet-landscape-up {
+            left: 28%;
+            bottom: 2%;
+        }
 
         a {
             text-decoration: none;
-            color: $mainColor;
             display: flex;
             flex-direction: column;
             align-items: center;
+            background-color: $mainColor;
+            border-radius: 5px;
+            color: white;
+            padding: 4px;
+
+            @include for-tablet-portrait-up {
+                font-size: 1.5rem;
+                padding: 10px;
+            }
+
+            @include for-tablet-landscape-up {
+                font-size: 2rem;
+            }
 
             &:hover {
-                color: white;
+                color: $mainColor;
+                background-color: white;
             }
         }
     }

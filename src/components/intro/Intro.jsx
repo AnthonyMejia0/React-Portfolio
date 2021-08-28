@@ -5,7 +5,7 @@ function Intro() {
         <div className="intro" id="intro">
             <div className="text-box">
                 <h2>Hi, <br /> my name is <br /></h2>
-                <h2 className="name">Anthony</h2>
+                <h2 className="name">Anthony.</h2>
             </div>
             <div className="about-me">
                 <ul>
@@ -17,7 +17,6 @@ function Intro() {
             <div className="skillset">
                 <a href='#portfolio'>
                     <h3>Click to see my skillset</h3>
-                    <h3>v</h3>
                 </a>
             </div>
         </div>
