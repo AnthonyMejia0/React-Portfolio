@@ -6,10 +6,6 @@
     margin: 15px;
 
     h1 {
-        font-size: 4rem;
-
-        @include for-phone-only {
-            font-size: 2rem;
-        }
+        font-size: 2rem;
     }
 }
