@@ -2,7 +2,7 @@
 
 
 .intro {
-    overflow: hidden;
+    //overflow: hidden;
     position: relative;
     background-image: url(./desk.jpg);
     background-color: black;
@@ -11,15 +11,15 @@
     background-size: cover;
 
     .text-box{
+        padding: 5px;
         h2 {
             font-size: 5rem;
             text-align: left;
-            margin-left: 0.7rem;
             color: rgb(243, 246, 247);
             overflow-y: hidden;
 
             @include for-phone-only {
-                line-height: 5rem;
+                line-height: 4rem;
              }
 
             @include for-phone-landscape {
@@ -27,7 +27,7 @@
             }
 
              @include for-desktop-up {
-                 font-size: 7.7rem;
+                 font-size: 7rem;
              }
         }
 
@@ -45,7 +45,7 @@
 
             @include for-desktop-up {
                 color: $mainColor;
-                font-size: 10rem;
+                font-size: 9rem;
             }
         }
     }
@@ -93,62 +93,6 @@
                 @include for-phone-landscape {
                     font-size: 1.5rem;
                 }
-            }
-        }
-    }
-
-    .skillset {
-        position: absolute;
-        bottom: 20%;
-
-        @include for-phone-only {
-            left: 17%;
-        }
-
-        @include for-tablet-portrait-up {
-            left: 25%;
-            bottom: 10%;
-        }
-
-        @include for-tablet-landscape-up {
-            left: 28%;
-            bottom: 2%;
-        }
-
-        @include for-desktop-up {
-            left: 35%;
-        }
-
-        @include for-phone-landscape {
-            left: 60%;
-        }
-
-        a {
-            text-decoration: none;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: $mainColor;
-            border-radius: 5px;
-            color: white;
-            padding: 4px;
-
-            @include for-tablet-portrait-up {
-                font-size: 1.5rem;
-                padding: 10px;
-            }
-
-            @include for-tablet-landscape-up {
-                font-size: 2rem;
-            }
-
-            @include for-phone-landscape {
-                font-size: 1rem;
-            }
-
-            &:hover {
-                color: $mainColor;
-                background-color: white;
             }
         }
     }

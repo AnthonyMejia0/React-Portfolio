@@ -14,11 +14,6 @@ function Intro() {
                     <li>Budding Web Developer</li>
                 </ul>
             </div>
-            <div className="skillset">
-                <a href='#skillset'>
-                    <h3>Click to see my skillset</h3>
-                </a>
-            </div>
         </div>
     )
 }
