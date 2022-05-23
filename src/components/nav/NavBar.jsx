@@ -1,33 +1,47 @@
 import './navbar.scss'
-import logo from './AM_LOGO.png'
-import {Person, Phone, MailOutline} from '@material-ui/icons/';
+import logo from './Portfolio_Logo_Blue.png'
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
-function NavBar({ menuOpen, setMenuOpen }) {
+function NavBar() {
     return (
-        <div className={"navbar " + (menuOpen && "active")}>
+        <div className="navbar">
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro">
-                        <img src={logo} alt="My Personal logo" />
+                    <a className="logocontainer" href="#intro">
+                        <img className="logo" src={logo} alt="My Personal logo" />
                     </a>
-                    <div className="itemContainer">
-                        <Person className="icon" />
-                        <span className="phone">Anthony Mejia</span>
+                </div>
+                <div className="middle">
+                    <div className="navlink">
+                        <a className="link" href="#intro">Home</a>
                     </div>
-                    <div className="itemContainer">
-                        <Phone className="icon" />
-                        <span className="phone">+1 (626) 202-4909</span>
+                    <div className="navlink">
+                        <a className="link" href="#skillset">About Me</a>
                     </div>
-                    <div className="itemContainer">
-                        <MailOutline className="icon" />
-                        <span className="mail">mejia.anthony96@gmail.com</span>
+                    <div className="navlink">
+                        <a className="link" href="#works">Projects</a>
                     </div>
+                    <div className="navlink">
+                        <a className="link" href="#contact">Contact</a>
+                    </div>  
                 </div>
                 <div className="right">
-                    <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
-                        <span className="line1"></span>
-                        <span className="line2"></span>
-                        <span className="line3"></span>
+                    <div className="itemContainer">
+                        <a className="github" href="https://github.com/AnthonyMejia0" target="_blank" rel="noreferrer">
+                            <GitHubIcon className="icon" id="social" />
+                        </a>
+                    </div>
+                    <div className="itemContainer">
+                        <a className="linkedin" href="https://www.linkedin.com/in/anthony-mejia-84169b172" target="_blank" rel="noreferrer">
+                            <LinkedInIcon className="icon" id="social" />
+                        </a>
+                    </div>
+                    <div className="itemContainer">
+                        <a className="youtube" href="https://www.youtube.com/channel/UCqfTZe21vlUhOUqeR59bxcQ" target="_blank" rel="noreferrer">
+                            <YouTubeIcon className="icon" id="social" />
+                        </a>
                     </div>
                 </div>
             </div>

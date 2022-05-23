@@ -2,96 +2,98 @@
 
 
 .intro {
-    //overflow: hidden;
     position: relative;
-    background-image: url(./desk.jpg);
-    background-color: black;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
+    .bg {
+        position: relative;
+        overflow: hidden;
+        margin: -20px -20px;
+        height: 100vh;
+        background-color: black;
+        /*
+        background-image: url(./desk.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(8px);
+        */
+    }
 
     .text-box{
-        padding: 5px;
-        h2 {
-            font-size: 5rem;
-            text-align: left;
-            color: rgb(243, 246, 247);
-            overflow-y: hidden;
+        position: absolute;
+        width: 100vw;
+        top: 70px;
+        left: 50%;
+        transform: translate(-50%, 0%);
 
-            @include for-phone-only {
-                line-height: 4rem;
-             }
+        h2 {
+            padding-top: 70px;
+            text-align: center;
+            color: lightgray;
 
             @include for-phone-landscape {
                 font-size: 2.5rem;
             }
 
              @include for-desktop-up {
-                 font-size: 7rem;
+                 font-size: 5rem;
              }
         }
 
         .name {
             color: $mainColor;
             font-weight: bold;
+            padding-top: 0;
+            padding-bottom: 20px;
 
             @include for-phone-only {
-                font-size: 4.1rem;
+                font-size: 3rem;
              }
 
             @include for-tablet-landscape-up {
-                font-size: 7rem;
+                font-size: 4rem;
             }
 
             @include for-desktop-up {
                 color: $mainColor;
-                font-size: 9rem;
+                font-size: 5rem;
             }
         }
-    }
 
-    .about-me {
-        position: absolute;
-        left: 4%;
-        margin-top: 1rem;
-
-        @include for-tablet-portrait-up {
-            left: 1.7%;
-            //margin-top: 3rem;
-        }
-
-        @include for-tablet-landscape-up {
-            left: 2%;
+        .about-me {
+            position: static;
+            text-align: center;
             margin-top: 1rem;
-        }
-
-        @include for-desktop-up {
-            left: 1%;
-        }
-
-        ul {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            align-items: left;
-
-            li {
-                animation: fadeIn 2s;
-                opacity: 1;
-                font-size: 1.45rem;
-                margin-bottom: 0.8rem;
-                color: white;
-                
-                @include for-tablet-portrait-up {
-                    font-size: 2.2rem;
-                }
-
-                @include for-tablet-landscape-up {
-                    font-size: 2.7rem;
-                }
-
-                @include for-phone-landscape {
-                    font-size: 1.5rem;
+    
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+    
+                li {
+                    animation: fadeIn 2s;
+                    opacity: 1;
+                    font-size: 1.45rem;
+                    margin: 0 15px;
+                    color: white;
+                    
+                    @include for-tablet-portrait-up {
+                        font-size: 2.2rem;
+                    }
+    
+                    @include for-tablet-landscape-up {
+                        font-size: 2rem;
+                    }
+    
+                    @include for-phone-landscape {
+                        font-size: 1rem;
+                    }
+    
+                    &::before {
+                        content: "*";
+                    }
                 }
             }
         }
