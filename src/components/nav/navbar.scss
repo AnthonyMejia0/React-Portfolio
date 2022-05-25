@@ -1,16 +1,17 @@
 @import '../../global.scss';
 
 .navbar {
-    background-color: black;
-    position: fixed;
+    position: absolute;
     top: 0;
     margin-bottom: 0;
     padding-bottom: 0;
+    height: 70px;
     width: 100vw;
     z-index: 3;
+    background-color: rgba($color: #000000, $alpha: 0);
 
     .wrapper {
-        height: 60px;
+        height: 70px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -23,7 +24,7 @@
                 margin-right: 110px;
 
                 .logo {
-                    height: 50px;
+                    height: 60px;
                     padding-top: 5px;
                 }
             }
@@ -33,6 +34,10 @@
             display: flex;
             flex: 1;
             justify-content: center;
+
+            @include for-phone-only {
+                display: none;
+            }
             
             .navlink {
                 display: flex;
@@ -44,6 +49,7 @@
                     padding: 3px;
                     text-decoration: none;
                     border: 1px solid transparent;
+                    font-size: 20px;
                 }
 
                 .link:hover {
@@ -63,7 +69,7 @@
                 margin: 0 20px;
 
                 .icon {
-                    font-size: 20px;
+                    font-size: 30px;
                     color: white;
                 }
 

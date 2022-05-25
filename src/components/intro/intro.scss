@@ -8,15 +8,15 @@
     .bg {
         position: relative;
         overflow: hidden;
-        background-color: black;
-        height: 105%;
-        width: 105%;
-        margin: -20px;
-        background-image: url(./desk.jpg);
+        //background-color: black;
+        height: 100%;
+        width: 100%;
+        //margin: -20px;
+        background-image: url(./circles.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        filter: blur(10px);
+        //filter: blur(10px);
         
     }
 

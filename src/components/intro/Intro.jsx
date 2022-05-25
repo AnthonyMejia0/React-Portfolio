@@ -1,10 +1,13 @@
 import './intro.scss'
+import NavBar from "../nav/NavBar"
 
 
 function Intro() {
     return (
         <div className="intro" id="intro">
-            
+            <header>
+                <NavBar />
+            </header>
             <div className="bg"></div>
             <div className="text-box">
                 <h2>Hi, <br /> my name is <br /></h2>

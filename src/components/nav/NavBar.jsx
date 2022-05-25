@@ -9,9 +9,9 @@ function NavBar() {
         <div className="navbar">
             <div className="wrapper">
                 <div className="left">
-                    <a className="logocontainer" href="#intro">
+                    <div className="logocontainer">
                         <img className="logo" src={logo} alt="My Personal logo" />
-                    </a>
+                    </div>
                 </div>
                 <div className="middle">
                     <div className="navlink">
