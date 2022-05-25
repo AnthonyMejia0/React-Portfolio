@@ -8,16 +8,19 @@
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.8.0",
     "@mui/material": "^5.8.1",
-    "browserslist": "^4.20.3",
-    "npm": "^8.5.5",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "ajv": "^8.11.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "^5.0.0",
     "sass": "^1.41.0",
-    "web-vitals": "^2.1.0"
+    "browserslist": "^4.20.3",
+    "typescript": "^4.7.2",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "preinstall": "npx npm-force-resolutions",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
@@ -42,13 +45,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0",
-    "glob-parent": "^6.0.1"
-  },
-  "resolutions": {
-    "gh-pages": "^4.0.0",
-    "glob-parent": "^6.0.1"
   }
 }
