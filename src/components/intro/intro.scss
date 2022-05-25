@@ -2,6 +2,7 @@
 
 
 .intro {
+    //overflow: hidden;
     position: relative;
     
     .bg {
@@ -24,80 +25,87 @@
     }
 
     .text-box{
-        position: absolute;
-        width: 100vw;
-        top: 70px;
-        left: 50%;
-        transform: translate(-50%, 0%);
-
+        padding: 5px;
         h2 {
-            padding-top: 70px;
-            text-align: center;
-            color: lightgray;
+            font-size: 5rem;
+            text-align: left;
+            color: rgb(243, 246, 247);
+            overflow-y: hidden;
+
+            @include for-phone-only {
+                line-height: 4rem;
+             }
 
             @include for-phone-landscape {
                 font-size: 2.5rem;
             }
 
              @include for-desktop-up {
-                 font-size: 5rem;
+                 font-size: 7rem;
              }
         }
 
         .name {
             color: $mainColor;
             font-weight: bold;
-            padding-top: 0;
-            padding-bottom: 20px;
 
             @include for-phone-only {
-                font-size: 3rem;
+                font-size: 4.1rem;
              }
 
             @include for-tablet-landscape-up {
-                font-size: 4rem;
+                font-size: 7rem;
             }
 
             @include for-desktop-up {
                 color: $mainColor;
-                font-size: 5rem;
+                font-size: 9rem;
             }
         }
+    }
 
-        .about-me {
-            position: static;
-            text-align: center;
+    .about-me {
+        position: absolute;
+        left: 4%;
+        margin-top: 1rem;
+
+        @include for-tablet-portrait-up {
+            left: 1.7%;
+            //margin-top: 3rem;
+        }
+
+        @include for-tablet-landscape-up {
+            left: 2%;
             margin-top: 1rem;
-    
-            ul {
-                list-style: none;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-    
-                li {
-                    animation: fadeIn 2s;
-                    opacity: 1;
-                    font-size: 1.45rem;
-                    margin: 0 15px;
-                    color: white;
-                    
-                    @include for-tablet-portrait-up {
-                        font-size: 2.2rem;
-                    }
-    
-                    @include for-tablet-landscape-up {
-                        font-size: 2rem;
-                    }
-    
-                    @include for-phone-landscape {
-                        font-size: 1rem;
-                    }
-    
-                    &::before {
-                        content: "*";
-                    }
+        }
+
+        @include for-desktop-up {
+            left: 1%;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+
+            li {
+                animation: fadeIn 2s;
+                opacity: 1;
+                font-size: 1.45rem;
+                margin-bottom: 0.8rem;
+                color: white;
+                
+                @include for-tablet-portrait-up {
+                    font-size: 2.2rem;
+                }
+
+                @include for-tablet-landscape-up {
+                    font-size: 2.7rem;
+                }
+
+                @include for-phone-landscape {
+                    font-size: 1.5rem;
                 }
             }
         }

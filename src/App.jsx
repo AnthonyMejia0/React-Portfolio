@@ -2,9 +2,14 @@ import Intro from "./components/intro/Intro"
 import Skillset from "./components/skillset/Skillset"
 import Works from "./components/works/Works"
 import Contact from "./components/contact/Contact"
+import Menu from "./components/menu/Menu";
 import "./app.scss"
+import { useState } from "react";
+
 
 function App() {
+const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="App">
       <div className="sections">
@@ -13,6 +18,8 @@ function App() {
         <Works />
         <Contact />
       </div>
+
+
     </div>
   );
 }
