@@ -1,7 +1,6 @@
 import './intro.scss'
 import NavBar from "../nav/NavBar"
 
-
 function Intro() {
     return (
         <div className="intro" id="intro">

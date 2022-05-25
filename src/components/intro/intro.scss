@@ -3,43 +3,37 @@
 
 .intro {
     position: relative;
-    overflow: hidden;
     
     .bg {
         position: relative;
         overflow: hidden;
         //background-color: black;
         height: 100%;
-        width: 100%;
-        //margin: -20px;
         background-image: url(./circles.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        //filter: blur(10px);
-        
+        height: 100vh;
+        /*
+        background-image: url(./desk.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(8px);
+        */
     }
 
     .text-box{
         position: absolute;
         width: 100vw;
-        top: 35%;
+        top: 70px;
         left: 50%;
-        transform: translate(-50%, -35%);
-        -webkit-text-stroke: 0.2px black;
-
-        @include for-phone-only {
-            line-height: 2.5rem;
-        }
+        transform: translate(-50%, 0%);
 
         h2 {
+            padding-top: 70px;
             text-align: center;
             color: lightgray;
-
-            @include for-phone-only {
-                font-size: 2.5rem;
-                line-height: 3rem;
-            }
 
             @include for-phone-landscape {
                 font-size: 2.5rem;
@@ -81,11 +75,6 @@
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
-
-                @include for-phone-only {
-                    flex-direction: column;
-                    line-height: 2.5rem;
-                }
     
                 li {
                     animation: fadeIn 2s;
@@ -105,17 +94,9 @@
                     @include for-phone-landscape {
                         font-size: 1rem;
                     }
-                    
-                    @include for-desktop-up {
-                        &:first-child::after {
-                            content: "|";
-                            padding-left: 30px;
-                        }
     
-                        &:nth-child(2)::after {
-                            content: "|";
-                            padding-left: 30px;
-                        }
+                    &::before {
+                        content: "*";
                     }
                 }
             }
