@@ -18,7 +18,7 @@ function NavBar() {
                         <a className="link" href="#intro">Home</a>
                     </div>
                     <div className="navlink">
-                        <a className="link" href="#skillset">About Me</a>
+                        <a className="link" href="#about">About Me</a>
                     </div>
                     <div className="navlink">
                         <a className="link" href="#works">Projects</a>
