@@ -2,12 +2,14 @@
 
 
 .intro {
-    position: relative;
     overflow: hidden;
     height: 100vh;
-    
+    width: 100vw;
+
     .bg {
         position: absolute;
+        overflow: hidden;
+        top: 0;
         height: 105%;
         width: 105%;
         margin: -20px;
@@ -19,12 +21,17 @@
     }
 
     .text-box{
-        position: absolute;
-        top: 45%;
+        position: relative;
+        background: none;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -55%);
         -webkit-text-stroke: 0.2px black;
         line-height: 6rem;
+
+        @include for-phone-only {
+            top: 35%;
+        }
         
         h2 {
             font-size: 5rem;
@@ -32,11 +39,13 @@
             color: white;
 
             @include for-phone-only {
-                line-height: 4rem;
+                font-size: 2.5rem;
+                line-height: 3rem;
              }
 
             @include for-phone-landscape {
                 font-size: 2.5rem;
+                line-height: 3rem;
             }
         }
 
@@ -47,7 +56,7 @@
             padding-bottom: 20px;
 
             @include for-phone-only {
-                font-size: 4.1rem;
+                font-size: 3rem;
              }
         }
     }
@@ -59,9 +68,22 @@
         ul {
             list-style: none;
             display: flex;
-            flex-direction: row;
             align-items: center;
             justify-content: center;
+
+            @include for-phone-only {
+                flex-direction: column;
+                line-height: 2.5rem;
+            }
+
+            @include for-tablet-portrait-up {
+                flex-direction: column;
+                line-height: 3.5rem;
+            }
+
+            @include for-desktop-up {
+                flex-direction: row;
+            }
 
             li {
                 font-size: 2rem;
@@ -80,14 +102,16 @@
                     font-size: 1.5rem;
                 }
 
-                &:nth-child(1)::after {
-                    content: "|";
-                    padding-left: 30px;
-                }
-
-                &:nth-child(2)::after {
-                    content: "|";
-                    padding-left: 30px;
+                @include for-desktop-up {
+                    &:nth-child(1)::after {
+                        content: "|";
+                        padding-left: 30px;
+                    }
+    
+                    &:nth-child(2)::after {
+                        content: "|";
+                        padding-left: 30px;
+                    }
                 }
             }
         }
