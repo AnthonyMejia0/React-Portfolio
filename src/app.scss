@@ -1,24 +1,18 @@
 .App {
     height: 100vh;
-    margin: 0;
-    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+        display: none;
+
+    }
 
     .sections {
-        position: relative;
-        scroll-behavior: smooth;
-        scroll-snap-type: y mandatory;
-        scrollbar-width: none; //Firefox
-
-        &::-webkit-scrollbar { //Other Browsers
-            display: none;
-        }
-
         > * {
-            width: 100vw;
-            height: 100vh;
-            padding-left: 0;
-            padding-top: 0;
-            scroll-snap-align: start;
+            position: relative;
         }
     }
 }
