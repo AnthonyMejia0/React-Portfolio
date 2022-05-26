@@ -8,9 +8,8 @@
     height: 60px;
     width: 100vw;
     z-index: 3;
-    background-color: rgba(black, 1);
-    overflow-y: hidden;
-    overflow-x: hidden;
+    background-color: rgba(black, 0);
+    overflow: hidden;
     transition: all 1.5s ease;
 
     .wrapper {
@@ -23,41 +22,57 @@
             .logocontainer {
                 display: flex;
                 align-items: center;
-                margin-left: 20px;
-                margin-right: 110px;
+
+                @include for-tablet-landscape-up {
+                    margin-left: 20px;
+                    margin-right: 110px;
+                }
 
                 .logo {
                     height: 50px;
-                    padding-top: 5px;
+
+                    @include for-desktop-up {
+                        height: 65px;
+                    }
                 }
             }
         }
 
         .middle {
-            display: flex;
-            flex: 1;
-            justify-content: center;
+            display: none;
 
-            @include for-phone-only {
-                display: none;
-            }
-
-            .navlink {
+            @include for-tablet-landscape-up {
                 display: flex;
-                align-items: center;
-                margin: 0 20px;
-                flex-shrink: 0;
+                //flex: 1;
+                justify-content: center;
+                margin: auto;
+                width: 50vw;
+                overflow: hidden;
 
-                .link {
-                    color:white;
-                    padding: 3px;
-                    text-decoration: none;
-                    border: 1px solid transparent;
-                    font-size: 1rem;
-                }
+                .navlink {
+                    display: flex;
+                    align-items: center;
+                    margin: 0 20px;
+                    flex-shrink: 0;
 
-                .link:hover {
-                    color: $mainColor;
+                    .link {
+                        color:white;
+                        padding: 3px;
+                        text-decoration: none;
+                        font-size: 1rem;
+
+                        @include for-tablet-landscape-up {
+                            font-size: 1.2rem;
+                        }
+
+                        @include for-desktop-up {
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    .link:hover {
+                        color: $secondaryColor;
+                    }
                 }
             }
         }
@@ -73,6 +88,10 @@
                 .icon {
                     font-size: 20px;
                     color: white;
+
+                    @include for-desktop-up {
+                        font-size: 27px;
+                    }
                 }
 
                 .github {
@@ -91,12 +110,6 @@
                     :hover {
                         color: red;
                     }
-                }
-    
-                span {
-                    font-size: 15px;
-                    margin-left: 2px;
-                    font-weight: bold;
                 }
             }
         }
