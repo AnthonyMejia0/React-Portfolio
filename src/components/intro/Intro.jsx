@@ -12,12 +12,12 @@ function Intro() {
                 <h2>Hi, <br /> my name is <br /></h2>
                 <h2 className="name">Anthony Mejia.</h2>
                 <div className="about-me">
-                <ul>
-                    <li>Programmer</li>
-                    <li>Tech Enthusiast</li>
-                    <li>Budding Web Developer</li>
-                </ul>
-            </div>
+                    <ul>
+                        <li>Programmer</li>
+                        <li>Tech Enthusiast</li>
+                        <li>Web Developer</li>
+                    </ul>
+                </div>
             </div>
         </div>
     )

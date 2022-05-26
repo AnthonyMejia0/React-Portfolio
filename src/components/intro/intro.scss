@@ -2,37 +2,51 @@
 
 
 .intro {
+    position: relative;
     overflow: hidden;
     height: 100vh;
     width: 100vw;
 
     .bg {
         position: absolute;
-        overflow: hidden;
+        //overflow: hidden;
         top: 0;
         height: 105%;
         width: 105%;
-        margin: -20px;
-        background-image: url(./desk.jpg);
+        margin: -10px -15px;
+        background-image: url(./deer.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        filter: blur(10px);
+        filter: blur(5px);
     }
 
     .text-box{
         position: relative;
-        background: none;
-        top: 40%;
+        padding: 50px 0;
+        background-color: rgba(40, 33, 64, 0.9);
+        width: 60vw;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -55%);
-        -webkit-text-stroke: 0.2px black;
         line-height: 6rem;
+        border: 1px solid black;
+        border-radius: 25px;
+        box-shadow:  0  0 20px 20px;
 
         @include for-phone-only {
-            top: 35%;
+            top: 32%;
+            width: 85vw;
+        }
+
+        @include for-tablet-portrait-up {
+            width: 80vw;
         }
         
+        @include for-desktop-up {
+            width: 55vw;
+        }
+
         h2 {
             font-size: 5rem;
             text-align: center;
@@ -59,58 +73,57 @@
                 font-size: 3rem;
              }
         }
-    }
 
-    .about-me {
-        position: relative;
-        width: 100vw;
-
-        ul {
-            list-style: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            @include for-phone-only {
-                flex-direction: column;
-                line-height: 2.5rem;
-            }
-
-            @include for-tablet-portrait-up {
-                flex-direction: column;
-                line-height: 3.5rem;
-            }
-
+        .about-me {
+            position: relative;
+            //width: 100vw;
+    
             @include for-desktop-up {
-                flex-direction: row;
+                margin-top: 30px;
             }
-
-            li {
-                font-size: 2rem;
-                margin: 0 15px;
-                color: white;
-                
-                @include for-tablet-portrait-up {
-                    font-size: 2.2rem;
+    
+            ul {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                @include for-phone-only {
+                    flex-direction: column;
+                    line-height: 2.5rem;
                 }
-
+    
                 @include for-tablet-landscape-up {
+                    flex-direction: row;
+                }
+    
+                li {
                     font-size: 2rem;
-                }
-
-                @include for-phone-landscape {
-                    font-size: 1.5rem;
-                }
-
-                @include for-desktop-up {
-                    &:nth-child(1)::after {
-                        content: "|";
-                        padding-left: 30px;
+                    margin: 0 15px;
+                    color: white;
+                    
+                    @include for-tablet-portrait-up {
+                        font-size: 2.2rem;
                     }
     
-                    &:nth-child(2)::after {
-                        content: "|";
-                        padding-left: 30px;
+                    @include for-tablet-landscape-up {
+                        font-size: 2rem;
+                    }
+    
+                    @include for-phone-landscape {
+                        font-size: 1.5rem;
+                    }
+    
+                    @include for-desktop-up {
+                        &:nth-child(1)::after {
+                            content: "|";
+                            padding-left: 30px;
+                        }
+        
+                        &:nth-child(2)::after {
+                            content: "|";
+                            padding-left: 30px;
+                        }
                     }
                 }
             }
