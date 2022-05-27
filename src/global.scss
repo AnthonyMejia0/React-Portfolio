@@ -1,7 +1,16 @@
-$secondaryColor: #cde6f5;
-//$secondaryColor: #467599;
-$backgroundColor: #0a192f;
-$gold: #ffd700;
+/*
+    Ocford Blue: #06101e,
+    Sky Blue Crayola: #5ADBFF,
+    Slate Grey: #637786,
+    Snow: #FFFAFA
+*/
+
+$navColor: snow;
+$introColor: snow;
+$headerColor: #4FB286;
+$secondaryColor: #5ADBFF;
+$paragraphColor: #637786;
+$backgroundColor: #06101e;
 
 @mixin for-phone-only {
     @media (max-width: 599px) { @content; }
