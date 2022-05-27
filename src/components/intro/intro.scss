@@ -1,6 +1,5 @@
 @import '../../global.scss';
 
-
 .intro {
     position: relative;
     overflow: hidden;
@@ -18,7 +17,7 @@
             font-size: 2.5rem;
             line-height: 3rem;
             text-align: center;
-            color: white;
+            color: $introColor;
 
             @include for-medium-screens {
                 font-size: 4rem;
@@ -32,6 +31,8 @@
             font-size: 3rem;
             padding-top: 20px;
             padding-bottom: 20px;
+            font-family: 'Courgette', cursive;
+            font-weight: 700;
 
             @include for-medium-screens {
                 font-size: 4rem;
@@ -64,7 +65,7 @@
                 li {
                     font-size: 2rem;
                     margin: 0 15px;
-                    color: white;
+                    color: $paragraphColor;
                     
                     @include for-tablet-landscape-up {
                         font-size: 2.2rem;
