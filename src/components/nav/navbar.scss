@@ -22,11 +22,8 @@
             .logocontainer {
                 display: flex;
                 align-items: center;
-
-                @include for-tablet-landscape-up {
-                    margin-left: 20px;
-                    margin-right: 110px;
-                }
+                margin-left: 20px;
+                margin-right: 110px;
 
                 .logo {
                     height: 50px;
@@ -43,7 +40,6 @@
 
             @include for-tablet-landscape-up {
                 display: flex;
-                //flex: 1;
                 justify-content: center;
                 margin: auto;
                 width: 50vw;
@@ -56,7 +52,7 @@
                     flex-shrink: 0;
 
                     .link {
-                        color:white;
+                        color: $navColor;
                         padding: 3px;
                         text-decoration: none;
                         font-size: 1rem;
@@ -71,7 +67,8 @@
                     }
 
                     .link:hover {
-                        color: $secondaryColor;
+                        color: $paragraphColor;
+                        cursor: pointer;
                     }
                 }
             }
@@ -87,7 +84,7 @@
 
                 .icon {
                     font-size: 20px;
-                    color: white;
+                    color: $navColor;
 
                     @include for-desktop-up {
                         font-size: 27px;
