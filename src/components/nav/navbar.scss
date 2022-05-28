@@ -38,7 +38,11 @@
         .middle {
             display: none;
 
-            @include for-tablet-landscape-up {
+            @include for-phone-landscape {
+                display: none;
+            }
+
+            @include for-desktop-up {
                 display: flex;
                 justify-content: center;
                 margin: auto;
