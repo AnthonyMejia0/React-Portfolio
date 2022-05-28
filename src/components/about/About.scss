@@ -2,27 +2,37 @@
 
 .about {
     height: 100vh;
+    width: 100vw;
 
     .text-box {
-        height: 50vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
+        width: 95vw;
+        display: grid;
+        padding-top: 3rem;
+        grid-template-columns: 95vw;
+        grid-template-rows: 25vh repeat(5, 1fr);
         align-items: center;
-        justify-content: space-evenly;
+        margin: auto;
+        grid-row-gap: 0;
 
-        @include for-medium-screens {
-            width: 50vw;
+        > * {
+            margin: 0 auto 2.5rem;
+        }
+
+        @include for-tablet-landscape-up {
+            justify-content: left;
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 2rem;
         }
 
         .title {
             color: $secondaryColor;
-            font-size: 6rem;
+            width: 30vw;
+            font-size: 4.5rem;
             text-align: center;
             box-shadow: 0 0 5px 5px;
-            width: 85%;
             font-family: 'Caveat', cursive;
             font-weight: 700;
+            padding: 0.5rem 6.5rem;
         }
     
         .line-break {
@@ -35,6 +45,43 @@
                 display: none;
             }
         }
-    }
 
+        .headline {
+            padding: 0 2rem;
+
+            h3 {
+                color: $introColor;
+
+                 @include for-tablet-landscape-up {
+                    font-size: 1.2rem;
+                 }
+
+                 @include for-desktop-up {
+                     font-size: 1.6rem;
+                 }
+            }
+        }
+
+        .detailed {
+            padding: 0 2rem;
+            grid-row-start: 2;
+            grid-row-end: 5;
+
+            p {
+                color: $paragraphColor;
+                font-size: 1.7rem;
+                margin-bottom: 4rem;
+
+                @include for-tablet-landscape-up {
+                    text-indent: 25px;
+                }
+            }
+        }
+
+        .skills {
+            color: $introColor;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+    }
 }
