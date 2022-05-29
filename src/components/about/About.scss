@@ -9,18 +9,22 @@
         display: grid;
         padding-top: 3rem;
         grid-template-columns: 95vw;
-        grid-template-rows: 25vh repeat(5, 1fr);
         align-items: center;
         margin: auto;
         grid-row-gap: 0;
 
         > * {
             margin: 0 auto 2.5rem;
+
+            @include for-medium-screens {
+                margin: 0 auto;
+            }
         }
 
-        @include for-tablet-landscape-up {
+        @include for-medium-screens {
             justify-content: left;
             grid-template-columns: 1fr 1fr;
+            grid-template-rows: 25vh repeat(5, 1fr);
             grid-row-gap: 2rem;
         }
 
@@ -33,21 +37,27 @@
             font-family: 'Caveat', cursive;
             font-weight: 700;
             padding: 0.5rem 6.5rem;
-        }
-    
-        .line-break {
-            height: 2.5px;
-            width: 85%;
-            background-color: $paragraphColor;
-            border-radius: 25%;
 
+            @include for-medium-screens {
+                width: 25vw;
+            }
+        }
+
+        .about-box {
             @include for-tablet-landscape-up {
-                display: none;
+                grid-row-start: 1;
+                grid-row-end: 2;
             }
         }
 
         .headline {
             padding: 0 2rem;
+
+            @include for-tablet-landscape-up {
+                grid-row-start: 1;
+                grid-row-end: 2;
+                grid-column-start: 2;
+            }
 
             h3 {
                 color: $introColor;
@@ -64,8 +74,11 @@
 
         .detailed {
             padding: 0 2rem;
-            grid-row-start: 2;
-            grid-row-end: 5;
+
+            @include for-tablet-landscape-up {
+                grid-row-start: 2;
+                grid-row-end: 6;
+            }
 
             p {
                 color: $paragraphColor;
@@ -78,10 +91,21 @@
             }
         }
 
-        .skills {
+        .skills-title-box {
+            @include for-tablet-landscape-up {
+                grid-column-start: 2;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+        }
+
+        .skills-box {
             color: $introColor;
-            grid-row-start: 3;
-            grid-row-end: 5;
+
+            @include for-tablet-landscape-up {
+                grid-row-start: 3;
+                grid-row-end: 6;
+            }
         }
     }
 }
