@@ -1,0 +1,22 @@
+@import '../../global.scss';
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include for-tablet-landscape-up {
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 1.5rem;
+    }
+
+    img {
+        height: 10vh;
+        width: 25vw;
+        padding: 10px 10px;
+
+        @include for-tablet-landscape-up {
+            height: 10vh;
+            width: 10vw;
+        }
+    }
+}
