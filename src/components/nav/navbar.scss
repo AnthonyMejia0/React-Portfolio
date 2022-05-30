@@ -2,15 +2,28 @@
 
 .navbar {
     position: relative;
-    top: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
     height: 60px;
     width: 100vw;
-    z-index: 3;
     background-color: rgba(black, 0);
     overflow: hidden;
     transition: all 1.5s ease;
+    margin-bottom: 19vh;
+
+    @include for-medium-screens {
+        margin-bottom: 10vh;
+    }
+
+    @include for-tablet-landscape-up {
+        margin-bottom: 6rem;
+    }
+
+    @include for-desktop-up {
+        margin-bottom: 19vh;
+    }
+
+    @include for-phone-landscape {
+        margin-bottom: 6vh;
+    }
 
     .wrapper {
         height: 60px;
@@ -36,13 +49,11 @@
         }
 
         .middle {
-            display: none;
+            //display: none;
+            visibility: hidden;
 
-            @include for-phone-landscape {
-                display: none;
-            }
-
-            @include for-desktop-up {
+            @include for-tablet-landscape-up {
+                visibility: visible;
                 display: flex;
                 justify-content: center;
                 margin: auto;
