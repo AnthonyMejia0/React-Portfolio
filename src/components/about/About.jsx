@@ -13,7 +13,7 @@ function About() {
                 </div>
                 <div className="detailed">
                     <p>I'm 26 years old and recently graduated from UC Riverside with a Bachelor's degree in Computer Science.</p>
-                    <p>Over the past several years I've now had the oppurtunity to work work on projects in several fields of code including, Embedded Systems, Databases, Gaming, and Machine Learning, and have added several languages to my skillset in the proccess.  </p>
+                    <p>Over the past several years I've now had the oppurtunity to work on projects in several fields of code including, Embedded Systems, Databases, Gaming, and Machine Learning, and have added several languages to my skillset in the proccess.  </p>
                     <p>Currently I am working on building 2D games using the SDL2 game library in C++ by first constructing a reusable framework to make future projects simpler. My goal for this project is to continue learning while simultaneously practicing the techniques I've learned over the years.</p>
                 </div>
                 <div className="skills-title-box">
