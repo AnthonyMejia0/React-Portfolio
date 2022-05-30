@@ -10,13 +10,18 @@
     }
 
     img {
-        height: 10vh;
-        width: 25vw;
+        height: 5.5rem;
+        width: 6.4rem;
         padding: 10px 10px;
 
         @include for-tablet-landscape-up {
-            height: 10vh;
-            width: 10vw;
+            height: 5.7rem;
+            width: 7.7rem;
+        }
+
+        @include for-phone-landscape {
+            height: 5rem;
+            width: 7rem;
         }
     }
 }
