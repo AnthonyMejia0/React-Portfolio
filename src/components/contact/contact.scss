@@ -1,3 +1,164 @@
+@import '../../global.scss';
+
 .contact {
-    background-color: #5779AD;
+    position: relative;
+    padding-top: 1.5rem;
+
+    .contact-me {
+        text-align: center;
+        margin: 2rem 0 1rem;
+
+        h1 {
+            color: $secondaryColor;
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+        }
+    
+        h2 {
+            color: $headerColor;
+            margin-bottom: 0.5rem;
+        }
+    
+        h3 {
+            color: $paragraphColor;
+            padding: 0 1rem;
+            font-size: 1.4rem;
+
+            @include for-medium-screens {
+                padding: 0 5rem;
+            }
+
+            @include for-tablet-landscape-up {
+                padding: 0 10rem;
+            }
+
+            @include for-desktop-up {
+                padding: 0 20rem;
+            }
+        }
+    }
+
+    .contact-form {
+        max-width: 90vw;
+        margin: auto;
+        margin-bottom: 3rem;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @include for-tablet-landscape-up {
+            grid-template-columns: 45vw 45vw;
+        }
+
+        @include for-phone-landscape {
+            grid-template-columns: 1fr;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            width: 85vw;
+
+            @include for-medium-screens {
+                width: 75%;
+            }
+
+            @include for-tablet-landscape-up {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                width: 75%;
+            }
+
+            @include for-desktop-up {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                width: 75%;
+            }
+
+            @include for-phone-landscape {
+                width: 70%;
+            }
+            
+            label {
+                text-align: left;
+                font-size: 2rem;
+                font-weight: bold;
+                color: $introColor;
+                margin: 5px 0;
+            }
+
+            input {
+                height: 2.5rem;
+                font-weight: bold;
+                padding-left: 10px;
+                border-radius: 10px;
+                border-color: $secondaryColor;
+
+                @include for-desktop-up {
+                    height: 2.7rem;
+                }
+            }
+
+            textarea {
+                height: 10rem;
+                padding: 10px;
+                border-radius: 10px;
+                border-color: $secondaryColor;
+            }
+
+            input[type=submit] {
+                padding: 0;
+                margin: 20px auto;
+                height: 3rem;
+                width: 10rem;
+                color: white;
+                background-color: transparent;
+                font-size: 1.8rem;
+
+                &:hover {
+                    background-color: $paragraphColor;
+                }
+            }
+
+            h3 {
+                visibility: hidden;
+                color: $headerColor;
+                margin: auto;
+            }
+        }
+
+        .img-container {
+            position: relative;
+            display: none;
+
+            @include for-tablet-landscape-up {
+                display: block;
+                grid-column-start: 2;
+                width: 100%;
+                margin: auto;
+            }
+
+            @include for-phone-landscape {
+                display: none;
+            }
+
+            img {
+                width: 80%;
+            }
+
+            .link {
+                visibility: hidden;
+                position: absolute;
+                left: 13%;
+                bottom: 12%;
+                padding: 5px;
+                border: 1px solid rgb(50, 50, 62);
+                border-radius: 5px;
+                text-decoration: none;
+                color: rgb(50, 50, 62);
+                cursor: pointer;
+            }
+
+        }
+    }
 }
