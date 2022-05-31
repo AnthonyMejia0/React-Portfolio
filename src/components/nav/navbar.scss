@@ -49,7 +49,6 @@
         }
 
         .middle {
-            //display: none;
             visibility: hidden;
 
             @include for-tablet-landscape-up {
@@ -82,7 +81,7 @@
                     }
 
                     .link:hover {
-                        color: $paragraphColor;
+                        color: $headerColor;
                         cursor: pointer;
                     }
                 }
