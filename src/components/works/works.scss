@@ -1,9 +1,70 @@
+@import "../../global.scss";
+
 .works {
-    height: 400px;
-    background-color: #4E5561;
-    color: yellow;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+
+    @include for-medium-screens {
+        width: 75vw;
+    }
+
+    @include for-tablet-landscape-up {
+        width: 75vw;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    @include for-desktop-up {
+        width: 90vw;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+
+    .work-header {
+        color: $secondaryColor;
+        text-align: center;
+        margin-top: 1.3rem;
+        font-size: 1.5rem;
+
+        @include for-medium-screens {
+            font-size: 2rem;
+        }
+
+        @include for-tablet-landscape-up {
+            grid-column-start: 1;
+            grid-column: 1/-1;
+            margin-top: 1.5rem;
+        }
+
+        @include for-phone-landscape {
+            font-size: 1.5rem;
+        }
+    }
+
+    a {
+        cursor: pointer;
+        text-decoration: none;
+
+        .icons {
+            color: rgba($headerColor, 0.5);
+            font-size: 25px;
+            padding: 0 5px;
+        }
+    }
+
+
+    ul {
+        list-style: none;
+
+        li {
+            display: inline;
+            font-size: 1.1rem;
+            margin-right: 1.5rem;
+
+            @include for-phone-landscape {
+                font-size: 1rem;
+            }
+        }
+    }
 }
