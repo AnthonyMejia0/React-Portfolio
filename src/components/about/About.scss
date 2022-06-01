@@ -8,7 +8,9 @@
         grid-template-columns: 95vw;
         align-items: center;
         margin: auto;
+        margin-bottom: 5rem;
         grid-row-gap: 0;
+        overflow: hidden;
 
         > * {
             margin: 0 auto 2.5rem;
@@ -23,8 +25,8 @@
         }
 
         @include for-tablet-landscape-up {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 12rem repeat(5, 1fr);
+            grid-template-columns: 47vw 48vw;
+            grid-template-rows: 12rem repeat(4, 1fr);
             grid-row-gap: 2rem;
         }
 
