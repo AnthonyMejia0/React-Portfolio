@@ -1,0 +1,55 @@
+@import "../../global.scss";
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 85vw;
+    background-color: rgba($color: $paragraphColor, $alpha: 0.2);
+    border-radius: 5px;
+    margin: 2rem auto;
+    box-shadow: 0 0 2px black;
+    padding: 8px;
+
+    @include for-medium-screens {
+        width: 90%;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 0.7rem;
+        margin-bottom: 5px;
+
+        .icon {
+            font-size: 35px;
+            color: rgba($headerColor, 0.5);
+        }
+    }
+
+    .title {
+        color: $introColor;
+        text-align: center;
+        padding: 5px 0;
+        font-weight: bold;
+        font-size: 25px;
+        margin-bottom: 1rem;
+    }
+
+    .desc {
+        color: $paragraphColor;
+        text-align: left;
+        margin-top: 5px;
+        padding: 5px 1rem;
+        font-size: 20px;
+    }
+
+    .lang {
+        padding: 5px 1rem;
+        margin-top: 1rem;
+        color: $headerColor;
+        margin-bottom: 1rem;
+    }
+}
