@@ -131,7 +131,17 @@
                 @include for-tablet-landscape-up {
                     text-indent: 25px;
                 }
+
+                .link {
+                    color: inherit;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: white;
+                    }
+                }
             }
+            
         }
 
         .skills-title-box {
