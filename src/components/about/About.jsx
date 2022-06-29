@@ -14,7 +14,7 @@ function About() {
                 <div className="detailed">
                     <p>I'm 26 years old and recently graduated from UC Riverside with a Bachelor's degree in Computer Science.</p>
                     <p>Over the past several years I've now had the oppurtunity to work on projects in several fields of code including, Embedded Systems, Databases, Gaming, and Machine Learning, and have added several languages to my skillset in the proccess.  </p>
-                    <p>Currently I am exploring Full-Stack Web Development by taking courses and building web clones. My latest project is a fully responsive <span className="spotify">Spotify Controller</span> using Next.js, Tailwind CSS, NextAuth and the Spotify API. Check it out <a className="link spotify" href="https://spotify-clone-xi-five.vercel.app/" target="_blank" rel="noreferrer">here.</a></p>
+                    <p>Currently I am exploring Full-Stack Web Development by taking courses and building web clones. My latest project is a fully responsive <span className="spotify">Spotify Controller</span> using Next.js, Tailwind CSS, NextAuth and the Spotify API. Check out the project repo <a className="link spotify" href="https://github.com/AnthonyMejia0/Spotify-Clone.git" target="_blank" rel="noreferrer">here.</a></p>
                 </div>
                 <div className="skills-title-box">
                     <div className="title">My Skills</div>
