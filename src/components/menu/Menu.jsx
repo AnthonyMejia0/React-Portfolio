@@ -30,7 +30,7 @@ function MobileMenu() {
                     aria-expanded={open ? 'true' : undefined}
                     onClick={handleClick}
                     sx={{
-                        margin: "50px",
+                        margin: "17px",
                         "background-color": "#637786",
                         "background-opacity": "50%",
                         "border-radius": "50%",
