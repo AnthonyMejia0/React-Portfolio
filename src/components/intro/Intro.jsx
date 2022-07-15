@@ -1,5 +1,6 @@
 import './intro.scss'
 import NavBar from "../nav/NavBar"
+import React from 'react';
 
 function Intro() {
     return (
