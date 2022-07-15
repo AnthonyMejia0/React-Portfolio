@@ -4,6 +4,7 @@ import Works from "./components/works/Works"
 import Contact from "./components/contact/Contact"
 import ScrollToTop from "react-scroll-to-top"
 import "./app.scss"
+import MobileMenu from "./components/menu/Menu"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Works />
       <Contact />
+      <MobileMenu />
     </div>
   );
 }
