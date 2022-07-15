@@ -1,0 +1,48 @@
+@import "../../global.scss";
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+
+    @include for-medium-screens {
+        width: 75vw;
+    }
+
+    @include for-tablet-landscape-up {
+        width: 75vw;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    @include for-desktop-up {
+        width: 90vw;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+
+    a {
+        cursor: pointer;
+        text-decoration: none;
+
+        .icons {
+            color: rgba($headerColor, 0.5);
+            font-size: 25px;
+            padding: 0 5px;
+        }
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            display: inline;
+            font-size: 1.1rem;
+            margin-right: 1.5rem;
+
+            @include for-phone-landscape {
+                font-size: 1rem;
+            }
+        }
+    }
+}

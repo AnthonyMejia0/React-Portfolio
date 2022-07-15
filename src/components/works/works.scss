@@ -1,29 +1,14 @@
 @import "../../global.scss";
 
 .works {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: auto;
-
-    @include for-medium-screens {
-        width: 75vw;
-    }
-
-    @include for-tablet-landscape-up {
-        width: 75vw;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
-    }
-
-    @include for-desktop-up {
-        width: 90vw;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-    }
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 
     .work-header {
         color: $secondaryColor;
-        text-align: center;
         margin-top: 1.3rem;
         font-size: 1.5rem;
 
@@ -32,8 +17,6 @@
         }
 
         @include for-tablet-landscape-up {
-            grid-column-start: 1;
-            grid-column: 1/-1;
             margin-top: 1.5rem;
         }
 
@@ -42,29 +25,30 @@
         }
     }
 
-    a {
-        cursor: pointer;
-        text-decoration: none;
+    .tabs {
+        margin-top: 1.3rem;
+        font-size: 1rem;
 
-        .icons {
-            color: rgba($headerColor, 0.5);
-            font-size: 25px;
-            padding: 0 5px;
+        @include for-medium-screens {
+            font-size: 2rem;
         }
-    }
 
+        @include for-tablet-landscape-up {
+            margin-top: 1.5rem;
+        }
 
-    ul {
-        list-style: none;
+        @include for-phone-landscape {
+            font-size: 1.5rem;
+        }
 
-        li {
-            display: inline;
-            font-size: 1.1rem;
-            margin-right: 1.5rem;
-
-            @include for-phone-landscape {
-                font-size: 1rem;
-            }
+        .tab {
+            color: $headerColor;
+            padding: 10px;
+            background-color: transparent;
+            border-radius: 5px;
+            line-height: 1rem;
+            font-size: 1.5rem;
+            cursor: pointer;
         }
     }
 }
