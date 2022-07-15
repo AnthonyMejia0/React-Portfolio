@@ -2,6 +2,8 @@
 
 .App {
     background-color: $backgroundColor;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 
     .scroll {
         display: none;
