@@ -8,7 +8,7 @@ import { Carousel } from "react-responsive-carousel";
 function WebProjectPage() {
   return (
     <div className="w-project-page">
-        <Carousel autoPlay infiniteLoop interval={10000} transitionTime={2000} showStatus={false} swipeable >
+        <Carousel autoPlay infiniteLoop interval={10000} transitionTime={2000} showStatus={false} >
             <WebProject
                 title="Spotify Controller"
                 desc="This is a Next.js project utilizing the Spotify API, custom hooks, NextAuth.js, and Middleware."
