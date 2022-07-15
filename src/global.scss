@@ -12,6 +12,16 @@ $secondaryColor: #5ADBFF;
 $paragraphColor: #637786;
 $backgroundColor: #06101e;
 
+html {
+    background-color: $backgroundColor;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
 @mixin for-phone-only {
     @media (max-width: 599px) { @content; }
 }
