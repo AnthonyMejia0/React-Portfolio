@@ -2,8 +2,11 @@
 
 .App {
     background-color: $backgroundColor;
+    overflow-x: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    width: 100vw;
+    scrollbar-width: none;
 
     .scroll {
         display: none;
@@ -11,5 +14,9 @@
         @include for-tablet-landscape-up {
             display: inline;
         }
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
     }
 }
