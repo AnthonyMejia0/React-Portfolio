@@ -7,12 +7,12 @@
     align-items: center;
     justify-content: center;
     padding-top: 1.3rem;
-    //margin-bottom: 1.3rem;
+    margin-bottom: 1.5rem;
     padding-bottom: 2rem;
 
     a {
         width: 80%;
-        height: auto;
+        aspect-ratio: 16 / 9;
         border: 5px solid $paragraphColor;
         margin-bottom: 1rem;
         
