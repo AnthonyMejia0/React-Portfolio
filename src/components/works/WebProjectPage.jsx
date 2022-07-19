@@ -25,8 +25,8 @@ function WebProjectPage() {
             />
 
             <WebProject 
-              title="Snake Game (Desktop Only)"
-              desc="The classic snake game built using react with hooks."
+              title="Snake Game (Desktop)"
+              desc="The classic snake game built using react with hooks and state management."
               img={snake}
               url={"https://snake-game-steel.vercel.app/"}
             />
