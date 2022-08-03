@@ -5,9 +5,9 @@ import './contact.scss'
 
 function Contact() {
     const form = useRef();
-    const serviceKey = process.env.REACT_APP_SERVICE_KEY;
-    const templateKey = process.env.REACT_APP_TEMPLATE_KEY;
-    const publicKey = process.env.REACT_APP_PUBLIC_KEY;
+    const serviceKey = "service_3abohmv";
+    const templateKey = "template_oqh5xer";
+    const publicKey = "b8PPtf8zQNbiZEWdA";
   
     const sendEmail = (e) => {
       e.preventDefault();
