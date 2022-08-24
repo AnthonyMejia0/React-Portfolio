@@ -2,6 +2,8 @@ import WebProject from "./WebProject";
 import "./webprojectpage.scss";
 import Amazon from "./AmazonClone.png";
 import spotify from "./SpotifyHome.png";
+import Countries from "./country-api.png";
+import Shortly from "./url-short-screen.png";
 import todo from "./ToDoList.png";
 import snake from "./Snake.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -30,6 +32,20 @@ function WebProjectPage() {
           desc="This is a Next.js project utilizing the Spotify API, custom hooks, NextAuth.js, and Middleware."
           img={spotify}
           url="https://spotify-clone-eta-smoky.vercel.app/"
+        />
+
+        <WebProject
+          title="Rest Countries Api"
+          desc="This is a React and Typescript project using the rest countries api to list, search, and view country details."
+          img={Countries}
+          url="https://rest-api-countries-tau.vercel.app/"
+        />
+
+        <WebProject
+          title="URL Shortener"
+          desc="This is a React project which utilizes a link shortening api to provide unique short links to user input sites."
+          img={Shortly}
+          url="https://url-shortening-ruby.vercel.app/"
         />
 
         <WebProject
