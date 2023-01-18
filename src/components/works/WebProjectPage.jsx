@@ -3,6 +3,7 @@ import "./webprojectpage.scss";
 import Amazon from "./AmazonClone.png";
 import spotify from "./SpotifyHome.png";
 import Countries from "./country-api.png";
+import Jobs from "./Jobs.png";
 import Shortly from "./url-short-screen.png";
 import todo from "./ToDoList.png";
 import snake from "./Snake.png";
@@ -42,10 +43,10 @@ function WebProjectPage() {
         />
 
         <WebProject
-          title="URL Shortener"
-          desc="This is a React project which utilizes a link shortening api to provide unique short links to user input sites."
-          img={Shortly}
-          url="https://url-shortening-ruby.vercel.app/"
+          title="Job Listings With Filters"
+          desc="A simple job listing page with tags used to filter listing by categories."
+          img={Jobs}
+          url={"https://job-listings-page-jade.vercel.app/"}
         />
 
         <WebProject
@@ -53,6 +54,13 @@ function WebProjectPage() {
           desc="This is a To Do List built using React with hooks and Recoil for state management along with local storage."
           img={todo}
           url="https://todo-list-ecru-chi.vercel.app/"
+        />
+
+        <WebProject
+          title="URL Shortener"
+          desc="This is a React project which utilizes a link shortening api to provide unique short links to user input sites."
+          img={Shortly}
+          url="https://url-shortening-ruby.vercel.app/"
         />
 
         <WebProject
