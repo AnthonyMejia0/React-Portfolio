@@ -1,19 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.cc86085e.css",
-    "main.js": "/static/js/main.ea3fb64c.js",
+    "main.js": "/static/js/main.b6a017eb.js",
     "static/media/SpotifyHome.png": "/static/media/SpotifyHome.dc59ecdccfa00249b871.png",
     "static/media/AmazonClone.png": "/static/media/AmazonClone.aacc54c1c220f907c9ae.png",
+    "static/media/country-api.png": "/static/media/country-api.d4f757dd85a7a608b20b.png",
+    "static/media/url-short-screen.png": "/static/media/url-short-screen.cd24d432a438922f0008.png",
+    "static/media/Jobs.png": "/static/media/Jobs.51f19b6b2bc0a80dad28.png",
     "static/media/ToDoList.png": "/static/media/ToDoList.5b8d8231c5f10c0a999b.png",
     "static/media/mailbox.png": "/static/media/mailbox.6fd4c7e2d76449aabf76.png",
     "static/media/Snake.png": "/static/media/Snake.e4d68641d95a71ce3295.png",
     "static/media/Portfolio_Logo_LightBlue.png": "/static/media/Portfolio_Logo_LightBlue.f3176ae58738972951eb.png",
     "index.html": "/index.html",
     "main.cc86085e.css.map": "/static/css/main.cc86085e.css.map",
-    "main.ea3fb64c.js.map": "/static/js/main.ea3fb64c.js.map"
+    "main.b6a017eb.js.map": "/static/js/main.b6a017eb.js.map"
   },
   "entrypoints": [
     "static/css/main.cc86085e.css",
-    "static/js/main.ea3fb64c.js"
+    "static/js/main.b6a017eb.js"
   ]
 }
