@@ -1,5 +1,6 @@
 import WebProject from "./WebProject";
 import "./webprojectpage.scss";
+import ImageLocker from "./ImageLocker.png";
 import Amazon from "./AmazonClone.png";
 import spotify from "./SpotifyHome.png";
 import Countries from "./country-api.png";
@@ -22,10 +23,10 @@ function WebProjectPage() {
         swipeable={false}
       >
         <WebProject
-          title="Amazon Clone"
-          desc="An Amazon clone built using React, Firebase, and Tailwind CSS. Supports credit card payments through Stripe for testing purposes. (Use card information 42424242... for example payment.)"
-          img={Amazon}
-          url="https://clone-442a3.web.app/"
+          title="Image Locker"
+          desc="A personal image gallery with user authentication, cloud storage, and a user database built using Google Firebase and React."
+          img={ImageLocker}
+          url="https://photo-storage.vercel.app/"
         />
 
         <WebProject
@@ -33,6 +34,13 @@ function WebProjectPage() {
           desc="This is a Next.js project utilizing the Spotify API, custom hooks, NextAuth.js, and Middleware."
           img={spotify}
           url="https://spotify-clone-eta-smoky.vercel.app/"
+        />
+
+        <WebProject
+          title="Amazon Clone"
+          desc="An Amazon clone built using React, Firebase, and Tailwind CSS. Supports credit card payments through Stripe for testing purposes. (Use card information 42424242... for example payment.)"
+          img={Amazon}
+          url="https://clone-442a3.web.app/"
         />
 
         <WebProject
